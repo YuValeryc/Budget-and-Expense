@@ -1,0 +1,23 @@
+/* Đặt layout chung là flexbox */
+.layout-container {
+  display: flex;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  margin: 0;
+}
+
+/* CSS cho Sidebar */
+.sidebar {
+  width: 250px; /* Chiều rộng sidebar */
+  background-color: #2c3e50; /* Màu nền sidebar */
+  color: white;
+  flex-shrink: 0; /* Giữ sidebar cố định, không co lại */
+  height: 100vh;
+}
+
+/* Nội dung chính bên phải */
+.main-content {
+  flex-grow: 1; /* Chiếm phần còn lại */
+  background-color: #ecf0f1; /* Màu nền nội dung */
+  padding: 20px;
+  overflow-y: auto; /* Cuộn nếu nội dung dài hơn màn hình */
+}

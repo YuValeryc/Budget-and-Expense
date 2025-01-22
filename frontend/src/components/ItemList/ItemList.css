@@ -1,0 +1,73 @@
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 1;
+  padding: 20px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.transaction-item:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.transaction-source {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.transaction-amount {
+  color: #4169e2;
+  font-size: 1rem;
+}
+
+.transaction-category {
+  color: #5a5a5a;
+  font-size: 0.9rem;
+}
+
+.transaction-description {
+  color: #777;
+  font-size: 0.9rem;
+  max-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transaction-delete-button {
+  background-color: #e74c3c;    /* Màu nền */
+  color: white;                 /* Màu chữ (ở đây là biểu tượng 🗑) */
+  border: none;                 /* Xóa viền của nút */
+  border-radius: 50%;           /* Làm cho nút thành hình tròn */
+  width: 40px;                  /* Đặt chiều rộng của nút */
+  height: 40px;                 /* Đặt chiều cao của nút */
+  display: flex;                /* Dùng flex để căn giữa biểu tượng trong nút */
+  justify-content: center;      /* Căn giữa nội dung theo chiều ngang */
+  align-items: center;          /* Căn giữa nội dung theo chiều dọc */
+  font-size: 20px;              /* Kích thước của biểu tượng trong nút */
+  cursor: pointer;             /* Hiển thị con trỏ dạng tay khi hover */
+  transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.transaction-delete-button:hover {
+  background-color: #c0392b;    /* Màu nền khi hover */
+}

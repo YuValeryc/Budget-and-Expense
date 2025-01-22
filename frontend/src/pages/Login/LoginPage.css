@@ -1,0 +1,110 @@
+/* Cấu trúc chung */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-image: url('../../../../frontend/public/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login Box */
+.login {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  backdrop-filter: blur(10px); /* Hiệu ứng blur */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng mờ */
+}
+
+/* Title */
+.login__title {
+  color: #4169e2;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input group */
+.login__input-group {
+  margin-bottom: 20px;
+}
+
+.login__label {
+  color: #171717;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3); 
+  color: #171717;
+  font-size: 14px;
+}
+
+.login__input:focus {
+  outline: none;
+  border-color: #4169e2;
+  background: rgba(255, 255, 255, 0.5); 
+}
+
+.login__btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4169e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login__btn:hover {
+  background-color: #4169e2;
+}
+
+/* Footer */
+.login__footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login__toggle-btn {
+  background: none;
+  border: none;
+  color: #4169e2;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login__toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #007BFF;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot-password-btn:hover {
+  text-decoration: underline;
+}

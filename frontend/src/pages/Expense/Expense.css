@@ -1,0 +1,105 @@
+/* expense-container: Giới hạn chiều rộng và tạo không gian bao bọc */
+.expense-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* expense-header: Điều chỉnh bố cục cho phần tiêu đề */
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expense-header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.expense-header h2 span {
+  color: green;
+  font-weight: bold;
+}
+
+/* expense-add-button: Nút thêm chi tiêu */
+.expense-add-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.expense-add-button:hover {
+  background-color: #388E3C;
+}
+
+/* expense-error-message: Thông báo lỗi */
+.expense-error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* expense-body: Chia cột giữa biểu đồ và danh sách giao dịch */
+.expense-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* expense-chart-container: Biểu đồ chiếm phần lớn không gian bên trái */
+.expense-chart-container {
+  flex: 2;  /* Biểu đồ chiếm 2 phần */
+  min-width: 300px;
+}
+
+/* expense-item-container: Danh sách giao dịch bên phải */
+.expense-item-container {
+  flex: 1; /* Lịch sử thu nhập chiếm không gian còn lại */
+  min-width: 300px; /* Đảm bảo danh sách không quá nhỏ */
+  max-height: 500px; /* Để tránh kéo dài vô hạn */
+  overflow-y: auto; 
+}
+/* expense-filter: Giao diện tối giản */
+.expense-filter {
+  display: flex;
+  gap: 8px; /* Khoảng cách nhỏ giữa các phần tử */
+  align-items: center;
+  padding: 10px 0; /* Khoảng cách dọc */
+  margin-bottom: 16px;
+}
+
+/* Các phần tử trong expense-filter */
+.expense-filter select,
+.expense-filter button {
+  padding: 6px 10px; /* Kích thước vừa phải */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+.expense-filter button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.expense-filter button:hover {
+  background-color: #0056b3; /* Màu đậm hơn khi hover */
+}

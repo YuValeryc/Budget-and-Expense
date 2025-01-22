@@ -1,0 +1,135 @@
+.home-page {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.home-header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.home-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.summary-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.positive-balance .amount {
+  color: #4caf50;
+}
+
+.negative-balance .amount {
+  color: #ff3d00;
+}
+
+.home-history {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.history-block {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-item span {
+  font-size: 1rem;
+}
+
+.amount.expense {
+  color: #ff5722;
+}
+
+.amount.income {
+  color: #4caf50;
+}
+
+.home-error {
+  color: #ff3d00;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.export-button {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.export-button:hover {
+  background-color: #377ae4;
+}
+
+.export-button:active {
+  background-color: #377ae4;
+  transform: scale(0.98);
+}
+
+.export-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #377ae4;
+}

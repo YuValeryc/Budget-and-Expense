@@ -1,0 +1,106 @@
+/* income-container: Giới hạn chiều rộng và tạo không gian bao bọc */
+.income-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* income-header: Điều chỉnh bố cục cho phần tiêu đề */
+.income-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.income-header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.income-header h2 span {
+  color: green;
+  font-weight: bold;
+}
+
+/* income-add-button: Nút thêm thu nhập */
+.income-add-button {
+  background-color: #4169e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.income-add-button:hover {
+  background-color: #4170e4;
+}
+
+/* income-error-message: Thông báo lỗi */
+.income-error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* income-body: Chia cột giữa biểu đồ và danh sách giao dịch */
+.income-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* income-chart-container: Biểu đồ chiếm phần lớn không gian bên trái */
+.income-chart-container {
+  flex: 2; /* Biểu đồ chiếm 2 phần */
+  min-width: 300px;
+}
+
+/* income-item-container: Danh sách giao dịch bên phải */
+.income-item-container {
+  flex: 1; /* Lịch sử thu nhập chiếm không gian còn lại */
+  min-width: 300px; /* Đảm bảo danh sách không quá nhỏ */
+  max-height: 500px; /* Để tránh kéo dài vô hạn */
+  overflow-y: auto;
+}
+
+/* income-filter: Giao diện tối giản */
+.income-filter {
+  display: flex;
+  gap: 8px; /* Khoảng cách nhỏ giữa các phần tử */
+  align-items: center;
+  padding: 10px 0; /* Khoảng cách dọc */
+  margin-bottom: 16px;
+}
+
+/* Các phần tử trong income-filter */
+.income-filter select,
+.income-filter button {
+  padding: 6px 10px; /* Kích thước vừa phải */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+.income-filter button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.income-filter button:hover {
+  background-color: #0056b3; /* Màu đậm hơn khi hover */
+}

@@ -1,0 +1,151 @@
+/* Settings Page Styling */
+
+/* General Layout */
+.setting-container {
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.setting-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1d3557;
+}
+
+/* Table Styling */
+.setting-account-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.setting-account-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.setting-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.setting-edit-button,
+.setting-password-button {
+  background: #4169e2;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.setting-edit-button:hover,
+.setting-password-button:hover {
+  background: #1d3557;
+}
+
+/* Currency Settings */
+.currency-settings-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.currency-settings-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.currency-settings-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.currency-position-options label {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Category Management */
+.setting-section-title {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #1d3557;
+}
+
+.setting-category-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.setting-category-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.setting-category-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.setting-delete-button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.setting-delete-button:hover {
+  background: #d62828;
+}
+
+.setting-add-category {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.setting-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.setting-button {
+  background: #2a9d8f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.setting-button:hover {
+  background: #21867a;
+}
